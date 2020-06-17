@@ -8,7 +8,7 @@
     "start-local": "ng serve",
     "test": "ng test",
     "e2e": "protractor",
-    "preinstall": "npm install -g @angular/cli"
+    "preinstall": "npm install -g @angular/cli@latest"
   },
   "private": true,
   "dependencies": {
