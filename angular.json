@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pomodoro-work-timer"
+    }
+  },
+  "defaultProject": "pomodoro-work-timer",
+  "cli": {
+    "analytics": "b05e44e5-2dbf-4f3f-931f-44a98343eebe"
+  }
 }
