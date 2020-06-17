@@ -185,10 +185,10 @@ function startServer() {
 
     // Handle requests for static files
     // app.use(express.static('public'));
-    app.use(express.static('./sudoku-pwa-angular/dist/sudoku-pwa'));
+    app.use(express.static('./dist/sudoku-pwa'));
 
     app.get('/*', (req, res) =>
-        res.sendFile('index.html', { root: './sudoku-pwa-angular/dist/sudoku-pwa/' }),
+        res.sendFile('index.html', { root: './dist/sudoku-pwa/' }),
     );
 
     const port = process.env.PORT || '8000';
