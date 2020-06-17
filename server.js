@@ -141,11 +141,11 @@ function generateFakeForecast(location) {
 function getForecast(req, resp) {
     const location = req.params.location || '40.7720232,-73.9732319';
     const url = `${BASE_URL}/${API_KEY}/${location}`;
-    fetch(url).then((resp) => {
-        if (resp.status !== 200) {
-            throw new Error(resp.statusText);
+    fetch(url).then((resp2) => {
+        if (resp2.status !== 200) {
+            throw new Error(resp2.statusText);
         }
-        return resp.json();
+        return resp2.json();
     }).then((data) => {
         setTimeout(() => {
             resp.json(data);

@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PomodoroMobileComponent } from './pomodoro-mobile/pomodoro-mobile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PomodoroMobileComponent
   ],
   imports: [
     BrowserModule,
