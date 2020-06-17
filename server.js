@@ -45,10 +45,10 @@ function startServer() {
 
     // Handle requests for static files
     // app.use(express.static('public'));
-    app.use(express.static('../dist/pomodoro-work-timer'));
+    app.use(express.static('dist/pomodoro-work-timer'));
 
     app.get('/*', (req, res) =>
-        res.sendFile('index.html', { root: '../dist/pomodoro-work-timer/' }),
+        res.sendFile('index.html', { root: 'dist/pomodoro-work-timer/' }),
     );
 
     const port = process.env.PORT || '8000';
